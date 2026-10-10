@@ -2,9 +2,7 @@
   "name": "ci-cd",
   "version": "1.0.0",
   "main": "index.js",
-  "engines": {
-    "node": "22.x"
-  },
+    "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "typecheck": "tsc --noEmit",

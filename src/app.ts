@@ -2,7 +2,7 @@ import express from "express";
 const app = express();
 
 app.get("/", (_req, res) => {
-  const version = process.env.VERSION ?? "Development";
+  const version = "Development";
   res.type("html").send(`
     <!DOCTYPE html>
     <html lang="en">
