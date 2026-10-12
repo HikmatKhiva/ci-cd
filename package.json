@@ -1,26 +1,20 @@
 {
   "name": "ci-cd",
   "version": "1.0.0",
-  "main": "production/server.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/server.ts",
-    "typecheck": "tsc --noEmit",
-    "build": "tsc",
-    "test": "node --import tsx --test test/app.test.ts",
-    "start": "node production/server.js"
+    "dev": "nodemon server.ts",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "@types/express": "^5.0.6",
-    "@types/node": "^26.6.5",
-    "tsx": "^4.23.15",
-    "typescript": "^7.0.2"
-  },
   "dependencies": {
     "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
