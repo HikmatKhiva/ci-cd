@@ -1,14 +1,14 @@
 {
   "name": "ci-cd",
   "version": "1.0.0",
-  "main": "dist/server.js",
+  "main": "production/server.js",
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "typecheck": "tsc --noEmit",
     "build": "tsc",
     "test": "node --import tsx --test test/app.test.ts",
-    "start": "node dist/server.js"
+    "start": "node production/server.js"
   },
   "keywords": [],
   "author": "",
